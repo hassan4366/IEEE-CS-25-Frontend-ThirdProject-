@@ -7,10 +7,10 @@ body {
 .container {
   width: 600px;
   margin: 50px auto;
-  background:#fff;
+  background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 h1 {
   color: #fd90fd;
@@ -22,7 +22,6 @@ h1 {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
-  
 }
 
 input[type="text"] {
@@ -30,16 +29,16 @@ input[type="text"] {
   padding: 10px;
   font-size: 16px;
   border-radius: 8px;
-  border : 1px solid #dfe6e9;
+  border: 1px solid #dfe6e9;
 }
 
 button {
   padding: 10px 15px;
   border-radius: 8px;
   font-size: 16px;
-  border : 1px solid #dfe6e9;
-  background-color : #fd90fd;
-  color : #fff;
+  border: 1px solid #dfe6e9;
+  background-color: #fd90fd;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -57,7 +56,6 @@ button {
   color: #333;
   margin-bottom: 10px;
   display: inline-block;
-
 }
 
 .task small {
@@ -90,4 +88,3 @@ button {
 .task-controls button:hover {
   background-color: #fc5dfc;
 }
-
