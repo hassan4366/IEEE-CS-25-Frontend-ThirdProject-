@@ -56,7 +56,6 @@ function updateTaskStatus(id, status) {
     displayTasks();
   }
 }
-
 //Display
 function displayTasks() {
   const taskList = document.getElementById("taskList");
