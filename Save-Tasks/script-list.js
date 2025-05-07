@@ -28,7 +28,7 @@ function addTask() {
 function editTask(id) {
   const index = tasks.findIndex((t) => t.id === id);
   if (index !== -1) {
-    const newText = prompt("Edit task:", tasks[index].text);
+    const newText = prompt("Edit task", tasks[index].text);
     if (newText !== null) {
       tasks[index].text = newText.trim();
       saveTasks();
