@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style-list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <title>List</title>
   </head>
   <body>
     <div class="container">
-      <h1>Save-Tasks</h1>
+      <h1>ToDo List</h1>
       <div class="input">
-        <input type="text" id="taskInput" placeholder="Enter new task" />
-        <button onclick="addTask()">Add</button>
+        <input type="text" id="taskInput" placeholder="Enter a new task" />
+        <button onclick="addTask()">Add Task</button>
       </div>
-      <ul id="taskList"></ul>
-      <script src="script-list.js"></script>
+      <div id="taskList"></div>
     </div>
+    <script src="script-list.js"></script>
   </body>
 </html>
