@@ -24,6 +24,18 @@ function addTask() {
   displayTasks();
   taskInput.value = "";
 }
+// Edit a task
+function editTask(id) {
+  const index = tasks.findIndex((t) => t.id === id);
+  if (index !== -1) {
+    const newText = prompt("Edit task:", tasks[index].text);
+    if (newText !== null) {
+      tasks[index].text = newText.trim();
+      saveTasks();
+      displayTasks();
+    }
+  }
+}
 
 //Deleta a Task
 function removeTask(id) {
@@ -43,7 +55,6 @@ function updateTaskStatus(id, status) {
     displayTasks();
   }
 }
-
 //Display
 function displayTasks() {
   const taskList = document.getElementById("taskList");
@@ -77,3 +88,5 @@ function displayTasks() {
 }
 
 displayTasks();
+
+window.onload = renderTasks;
