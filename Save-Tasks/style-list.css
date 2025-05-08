@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  width: 600px;
+  width: 900px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
@@ -88,3 +88,69 @@ button {
 .task-controls button:hover {
   background-color: #fc5dfc;
 }
+
+/* Tablet*/
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+  .task-controls {
+    gap: 15px;
+    
+  }
+  .task-controls button{
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .task-controls select{
+    text-align: center;
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+
+  input[type="text"],
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .input {
+    gap: 10px;
+  }
+
+  .task {
+    padding: 10px;
+  }
+
+  .task strong {
+    font-size: 16px;
+  }
+
+  .task-controls {
+    gap: 5px;
+    
+  }
+
+}
+
