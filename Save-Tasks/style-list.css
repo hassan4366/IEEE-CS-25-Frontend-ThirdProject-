@@ -113,6 +113,11 @@ button {
     width: 100%;
     padding: 10px 15px;
   }
+  .task-controls select{
+    text-align: center;
+    width: 100%;
+    padding: 10px 15px;
+  }
 
 }
 
