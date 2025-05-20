@@ -87,7 +87,4 @@ function displayTasks() {
     taskList.appendChild(div);
   });
 }
-
-displayTasks();
-
-window.onload = renderTasks;
+window.onload = displayTasks;
