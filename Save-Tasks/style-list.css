@@ -49,6 +49,8 @@ button {
   margin-bottom: 20px;
   text-align: left;
   position: relative;
+  width: 100%;
+  word-break: break-word;
 }
 
 .task strong {
