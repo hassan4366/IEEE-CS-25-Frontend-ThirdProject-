@@ -4,6 +4,7 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+// End save local storage
 
 // Add a Task
 function addTask() {
@@ -24,6 +25,7 @@ function addTask() {
   displayTasks();
   taskInput.value = "";
 }
+// End add a task
 
 //Edit a Task
 function editTask(id) {
@@ -37,6 +39,7 @@ function editTask(id) {
     }
   }
 }
+// End Edit a Task
 
 //Deleta a Task
 function removeTask(id) {
@@ -46,6 +49,7 @@ function removeTask(id) {
     displayTasks();
   }
 }
+//End delete a task
 
 //Update Status
 function updateTaskStatus(id, status) {
@@ -56,6 +60,8 @@ function updateTaskStatus(id, status) {
     displayTasks();
   }
 }
+//End update status
+
 //Display
 function displayTasks() {
   const taskList = document.getElementById("taskList");
@@ -87,7 +93,6 @@ function displayTasks() {
     taskList.appendChild(div);
   });
 }
+//End display
 
-displayTasks();
-
-window.onload = renderTasks;
+window.onload = displayTasks;
